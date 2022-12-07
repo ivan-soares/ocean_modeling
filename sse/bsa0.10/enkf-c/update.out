@@ -1,0 +1,316 @@
+Invalid MIT-MAGIC-COOKIE-1 key  MPI: initialised 20 process(es)
+  running UPDATE for EnKF-C version 2.9.13:
+    command = "./enkf_update --calculate-spread enoi.prm"
+    dir = "/home/ivans/Dropbox/numex/roms/cases/sse/bsa0.10/enkf-c"
+  2021-11-02 10:53:01
+  reading system specs from "enoi.prm":
+    MODE = EnOI
+    MODEL PRM = "model.prm"
+    GRID PRM = "grid.prm"
+    OBS TYPES PRM = "obstypes.prm"
+    OBS PRM = "obs.prm"
+    DATE = "11323.5 days since 1990-01-01"
+    BGDIR = "d-background/20210101"
+    ENSEMBLE DIR = "d-ensemble/static"
+    ENSEMBLE SIZE = 26
+    RFACTOR BASE = 1.0
+    INFLATION BASE = 1.0000
+    INFLATION MODE = CAPPED, MAX RATIO = 1.00
+    KFACTOR = 999.0
+      LOCRAD  = 100
+      LOCWEIGHT =  1
+    STRIDE = 3
+    FIELDBUFFERSIZE = 4
+    REGION BSANTOS: x = [-50.0, -38.0], y = [-30.0, -21.0]
+    POINTLOG -40.000 -26.000 
+    NCFORMAT = NETCDF4
+    NCCOMPRESSION = 0
+    EnKF flags:
+      enkf_exitaction  = [BACKTRACE]
+      enkf_obstype     = [VALUE]
+    enkf_update compile flags:
+      NCW_SKIPSINGLE   = [-]
+      DEFLATE_ALL      = [-]
+  update specs:
+    do model fields  = [+]
+    do spread        = [+]
+    do pointlogs     = [+]
+    separate output  = [+]
+  initialising the system:
+    grid prm info:
+      NAME = "rho-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      DEPTHVARNAME = "h"
+      MASKVARNAME = "mask_rho"
+      VDIR = "tosurf"
+      XVARNAME = "lon_rho"
+      YVARNAME = "lat_rho"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      h type = NONE
+      dims = 101 x 76 x 30
+      longitude range = [0.000, 360.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+    grid prm info:
+      NAME = "u-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_u"
+      VDIR = "tosurf"
+      XVARNAME = "lon_u"
+      YVARNAME = "lat_u"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      h type = NONE
+      dims = 100 x 76 x 30
+      longitude range = [0.000, 360.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+    grid prm info:
+      NAME = "v-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_v"
+      VDIR = "tosurf"
+      XVARNAME = "lon_v"
+      YVARNAME = "lat_v"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      h type = NONE
+      dims = 101 x 75 x 30
+      longitude range = [0.000, 360.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+  model info:
+    name = B.Santos
+    7 variables:
+      zeta:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      temp:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      salt:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      u:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      v:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+      ubar:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      vbar:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+  setting the ensemble size:
+    26 members
+  initialising pointlogs:
+    pointlog (-40.000, -26.000):
+      rho-grid: (i, j) = (90.000, 35.000)
+      u-grid: (i, j) = (89.500, 35.000)
+      v-grid: (i, j) = (90.000, 34.500)
+  updating the model state:
+    allocating disk space for spread:
+    defining state variables in point logs:
+    2021-11-02 10:53:01
+    allocating disk space for analysis:.......
+    processing fields for rho-grid:
+      2021-11-02 10:53:01
+      61 fields
+      distributing 61 iterations:
+        20 processes get 4 or 3 iterations
+      temp     12  (4: 13: 33.3%)
+      salt     6   (12: 37: 33.3%)
+      salt     18  (16: 49: 33.3%)
+      salt     24  (18: 55: 33.3%)
+      zeta     29  (0: 0: 25.0%)
+      temp     15  (5: 16: 33.3%)
+      temp     18  (6: 19: 33.3%)
+      temp     21  (7: 22: 33.3%)
+      temp     27  (9: 28: 33.3%)
+      salt     0   (10: 31: 33.3%)
+      salt     9   (13: 40: 33.3%)
+      salt     12  (14: 43: 33.3%)
+      salt     15  (15: 46: 33.3%)
+      salt     21  (17: 52: 33.3%)
+      salt     27  (19: 58: 33.3%)
+      temp     3   (1: 4: 33.3%)
+      temp     6   (2: 7: 33.3%)
+      temp     9   (3: 10: 33.3%)
+      temp     24  (8: 25: 33.3%)
+      salt     3   (11: 34: 33.3%)
+      temp     0   (0: 1: 50.0%)
+      temp     16  (5: 17: 66.7%)
+      temp     28  (9: 29: 66.7%)
+      temp     4   (1: 5: 66.7%)
+      temp     29  (9: 30: 100.0%)
+      salt     4   (11: 35: 66.7%)
+      salt     28  (19: 59: 66.7%)
+      salt     16  (15: 47: 66.7%)
+      temp     13  (4: 14: 66.7%)
+      temp     17  (5: 18: 100.0%)
+      temp     25  (8: 26: 66.7%)
+      temp     19  (6: 20: 66.7%)
+      salt     25  (18: 56: 66.7%)
+      salt     7   (12: 38: 66.7%)
+      salt     19  (16: 50: 66.7%)
+      salt     13  (14: 44: 66.7%)
+      salt     10  (13: 41: 66.7%)
+      salt     22  (17: 53: 66.7%)
+      temp     10  (3: 11: 66.7%)
+      temp     22  (7: 23: 66.7%)
+      temp     5   (1: 6: 100.0%)
+      temp     7   (2: 8: 66.7%)
+      salt     1   (10: 32: 66.7%)
+      salt     29  (19: 60: 100.0%)
+      temp     14  (4: 15: 100.0%)
+      salt     26  (18: 57: 100.0%)
+      salt     17  (15: 48: 100.0%)
+      temp     1   (0: 2: 75.0%)
+      salt     8   (12: 39: 100.0%)
+      temp     20  (6: 21: 100.0%)
+      temp     23  (7: 24: 100.0%)
+      salt     20  (16: 51: 100.0%)
+      salt     23  (17: 54: 100.0%)
+      salt     11  (13: 42: 100.0%)
+      temp     26  (8: 27: 100.0%)
+      salt     5   (11: 36: 100.0%)
+      temp     11  (3: 12: 100.0%)
+      salt     14  (14: 45: 100.0%)
+      temp     8   (2: 9: 100.0%)
+      salt     2   (10: 33: 100.0%)
+      temp     2   (0: 3: 100.0%)
+    processing fields for u-grid:
+      2021-11-02 10:53:02
+      31 fields
+      distributing 31 iterations:
+        20 processes get 2 or 1 iterations
+      u        23  (12: 23: 100.0%)
+      u        27  (16: 27: 100.0%)
+      u        29  (18: 29: 100.0%)
+      u        8   (4: 8: 50.0%)
+      u        0   (0: 0: 50.0%)
+      ubar     29  (19: 30: 100.0%)
+      u        10  (5: 10: 50.0%)
+      u        25  (14: 25: 100.0%)
+      u        14  (7: 14: 50.0%)
+      u        4   (2: 4: 50.0%)
+      u        20  (10: 20: 50.0%)
+      u        28  (17: 28: 100.0%)
+      u        12  (6: 12: 50.0%)
+      u        2   (1: 2: 50.0%)
+      u        18  (9: 18: 50.0%)
+      u        26  (15: 26: 100.0%)
+      u        24  (13: 24: 100.0%)
+      u        16  (8: 16: 50.0%)
+      u        22  (11: 22: 100.0%)
+      u        6   (3: 6: 50.0%)
+      u        13  (6: 13: 100.0%)
+      u        17  (8: 17: 100.0%)
+      u        15  (7: 15: 100.0%)
+      u        7   (3: 7: 100.0%)
+      u        3   (1: 3: 100.0%)
+      u        19  (9: 19: 100.0%)
+      u        9   (4: 9: 100.0%)
+      u        21  (10: 21: 100.0%)
+      u        11  (5: 11: 100.0%)
+      u        5   (2: 5: 100.0%)
+      u        1   (0: 1: 100.0%)
+    processing fields for v-grid:
+      2021-11-02 10:53:02
+      31 fields
+      distributing 31 iterations:
+        20 processes get 2 or 1 iterations
+      v        12  (6: 12: 50.0%)
+      v        8   (4: 8: 50.0%)
+      v        29  (18: 29: 100.0%)
+      v        16  (8: 16: 50.0%)
+      v        10  (5: 10: 50.0%)
+      v        2   (1: 2: 50.0%)
+      v        23  (12: 23: 100.0%)
+      vbar     29  (19: 30: 100.0%)
+      v        27  (16: 27: 100.0%)
+      v        24  (13: 24: 100.0%)
+      v        28  (17: 28: 100.0%)
+      v        14  (7: 14: 50.0%)
+      v        18  (9: 18: 50.0%)
+      v        6   (3: 6: 50.0%)
+      v        26  (15: 26: 100.0%)
+      v        20  (10: 20: 50.0%)
+      v        22  (11: 22: 100.0%)
+      v        25  (14: 25: 100.0%)
+      v        0   (0: 0: 50.0%)
+      v        4   (2: 4: 50.0%)
+      v        13  (6: 13: 100.0%)
+      v        15  (7: 15: 100.0%)
+      v        19  (9: 19: 100.0%)
+      v        17  (8: 17: 100.0%)
+      v        3   (1: 3: 100.0%)
+      v        9   (4: 9: 100.0%)
+      v        21  (10: 21: 100.0%)
+      v        5   (2: 5: 100.0%)
+      v        11  (5: 11: 100.0%)
+      v        7   (3: 7: 100.0%)
+      v        1   (0: 1: 100.0%)
+  2021-11-02 10:53:02
+  assembling analysis:
+    zeta:.
+    temp:..............................
+    salt:..............................
+    u:..............................
+    v:..............................
+    ubar:.
+    vbar:.
+  2021-11-02 10:53:02
+  assembling spread:
+    zeta:.
+    temp:..............................
+    salt:..............................
+    u:..............................
+    v:..............................
+    ubar:.
+    vbar:.
+  2021-11-02 10:53:03
+  assembling state variables in point logs:
+    distributing 1 iterations:
+      1 processes get 1 iteration, 19 processes get 0 iterations
+    deleting tiles:
+      distributing 123 iterations:
+        20 processes get 7 or 6 iterations
+  2021-11-02 10:53:03
+  finished

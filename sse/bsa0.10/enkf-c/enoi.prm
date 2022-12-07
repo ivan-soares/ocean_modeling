@@ -1,0 +1,22 @@
+MODE = EnOI
+
+MODEL = model.prm
+GRID = grid.prm
+OBSTYPES = obstypes.prm
+
+OBS = obs.prm
+DATE = 11323.5 days since 1990-01-01
+
+BGDIR = d-background/20210101
+ENSDIR = d-ensemble/static
+ENSSIZE = 26
+
+KFACTOR = 999
+LOCRAD = 100
+
+STRIDE = 3
+FIELDBUFFERSIZE = 4
+
+REGION BSANTOS -50 -38 -30 -21 
+
+POINTLOG -40 -26

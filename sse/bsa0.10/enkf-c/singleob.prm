@@ -1,0 +1,21 @@
+MODE = EnOI
+
+MODEL = model.prm
+GRID = grid.prm
+OBSTYPES = obstypes.prm
+
+DATE = 25933 since 1950-01-01
+
+ENSDIR = ensemble_20210101
+BGDIR = background_20210101
+ENSSIZE = 96
+
+KFACTOR = 999
+LOCRAD = 500
+
+STRIDE = 3
+FIELDBUFFERSIZE = 4
+
+REGION Global   0   360   -90     90
+
+POINTLOG 156 -32

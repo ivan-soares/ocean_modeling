@@ -1,0 +1,30 @@
+PRODUCT = RADS
+TYPE = SLA
+READER = scattered
+PARAMETER VARNAME = sla_filtered
+PARAMETER BATCHNAME = cycle
+PARAMETER ZVALUE = 0
+PARAMETER MINDEPTH = 100
+FILE = d-obs/cmems_sla/sla_l3_cmems/nrt_global_*_phy_l3_202101{01,02}_*.nc
+ERROR_STD = 0.07
+
+PRODUCT = GHRSST
+TYPE = SST
+READER = gridded_xy
+PARAMETER ZVALUE = 0
+PARAMETER VARNAME = sea_surface_temperature
+PARAMETER VARSHIFT = -273.15
+FILE = d-obs/podaac/2021-01/subsetted-20210101*-NAVO*
+ERROR_STD = 0.1
+#   sses_standard_deviation  
+
+PRODUCT = GHRSST
+TYPE = SST
+READER = gridded_xy
+PARAMETER ZVALUE = 0
+PARAMETER VARNAME = sea_surface_temperature
+PARAMETER VARSHIFT = -273.15
+FILE = d-obs/podaac/2021-01/subsetted-20210101*-REMSS*
+ERROR_STD = 0.1 
+#    sses_standard_deviation  
+

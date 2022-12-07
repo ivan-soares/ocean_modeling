@@ -1,0 +1,359 @@
+Invalid MIT-MAGIC-COOKIE-1 key  MPI: initialised 20 process(es)
+  Using MPI-3 shared memory:
+    sm_comm size = 20
+    node_comm size = 1
+  running CALC for EnKF-C version 2.9.13:
+    command = "./enkf_calc enoi.prm"
+    dir = "/home/ivans/Dropbox/numex/roms/cases/sse/bsa0.10/enkf-c"
+  2021-09-29 12:06:17
+  reading system specs from "enoi.prm":
+    MODE = EnOI
+    MODEL PRM = "model.prm"
+    GRID PRM = "grid.prm"
+    OBS TYPES PRM = "obstypes.prm"
+    OBS PRM = "obs.prm"
+    DATE = "11323.5 days since 1990-01-01"
+    BGDIR = "d-background/20210101"
+    ENSEMBLE DIR = "d-ensemble/static"
+    ENSEMBLE SIZE = 45
+    RFACTOR BASE = 1.0
+    INFLATION BASE = 1.0000
+    INFLATION MODE = CAPPED, MAX RATIO = 1.00
+    KFACTOR = 999.0
+      LOCRAD  = 200
+      LOCWEIGHT =  1
+    STRIDE = 3
+    FIELDBUFFERSIZE = 4
+    REGION BSANTOS: x = [-50.0, -38.0], y = [-30.0, -21.0]
+    POINTLOG -40.000 -26.000 
+    NCFORMAT = NETCDF4
+    NCCOMPRESSION = 0
+    EnKF flags:
+      enkf_exitaction  = [BACKTRACE]
+      enkf_obstype     = [VALUE]
+    enkf_calc compile flags:
+      SHUFFLE_ROWS     = [-]
+      USE_SHMEM        = [+]
+      MINIMISE_ALLOC   = [+]
+      OBS_SHUFFLE      = [-]
+      TW_VIAFILE       = [-]
+      INTERNAL_QSORT_R = [-]
+      DEFLATE_ALL      = [-]
+  initialising the system:
+  reading observation type specs from "obstypes.prm":
+    NAME = SLA
+    ISSURFACE = 1
+      VAR = zeta
+      ID = 0
+      OFFSET = d-grids/roms_mean_bsa_2020.nc zeta
+      HFUNCTION = standard
+      ALLOWED MIN = -1
+      ALLOWED MAX = 1
+      ASYNCHRONOUS = no
+      LOCRAD  = 200
+      LOCWEIGHT =  1
+      RFACTOR = 1
+      PERMIT_LOCATION_BASED_THINNING = YES
+    NAME = SST
+    ISSURFACE = 1
+      VAR = temp
+      ID = 1
+      HFUNCTION = standard
+      ALLOWED MIN = -5e+03
+      ALLOWED MAX = 5e+03
+      ASYNCHRONOUS = no
+      LOCRAD  = 200
+      LOCWEIGHT =  1
+      RFACTOR = 16
+      WINDOWMIN = -1.000
+      WINDOWMAX = 1.000
+      PERMIT_LOCATION_BASED_THINNING = NO
+    grid prm info:
+      NAME = "rho-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      DEPTHVARNAME = "h"
+      MASKVARNAME = "mask_rho"
+      VDIR = "tosurf"
+      XVARNAME = "lon_rho"
+      YVARNAME = "lat_rho"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 101 x 76 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "rho-grid_XY":
+        7676 nodes
+        491312 bytes
+    grid prm info:
+      NAME = "u-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_u"
+      VDIR = "tosurf"
+      XVARNAME = "lon_u"
+      YVARNAME = "lat_u"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 100 x 76 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "u-grid_XY":
+        7600 nodes
+        486448 bytes
+    grid prm info:
+      NAME = "v-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_v"
+      VDIR = "tosurf"
+      XVARNAME = "lon_v"
+      YVARNAME = "lat_v"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 101 x 75 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "v-grid_XY":
+        7575 nodes
+        484848 bytes
+  model info:
+    name = B.Santos
+    7 variables:
+      zeta:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      temp:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      salt:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      u:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      v:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+      ubar:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      vbar:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+  setting the ensemble size:
+    45 members
+  initialising pointlogs:
+    pointlog (-40.000, -26.000):
+      rho-grid: (i, j) = (90.000, 35.000)
+      u-grid: (i, j) = (89.500, 35.000)
+      v-grid: (i, j) = (90.000, 34.500)
+  reading observations from "observations.nc":
+    6498 observations
+    allocating 467856 bytes for array of observations
+    creating kd-trees for observations:
+      kdtree "SLA":
+        561 nodes
+        35952 bytes
+      kdtree "SST":
+        5937 nodes
+        380016 bytes
+  calculating ensemble observations:
+  2021-09-29 12:06:18
+    allocating 1195632 bytes for HE array:
+    allocating 1169640 bytes for HE^T array:
+    distributing 45 iterations:
+      20 processes get 3 or 2 iterations
+    SLA +...
+    SST +...
+    subtracting ensemble mean:
+  writing forecast innovations and spread to "observations.nc":
+  2021-09-29 12:06:18
+  moderating observations:
+    observations substantially modified:
+      SLA          0 (0.0%)
+      SST          0 (0.0%)
+      total        0 (0.0%)
+  writing modified obs errors to "observations.nc":
+  calculating transforms:
+  2021-09-29 12:06:18
+    calculating transforms for rho-grid:
+      distributing 26 iterations:
+        20 processes get 2 or 1 iterations
+      creating empty file "transforms-0.nc":
+      main cycle for rho-grid (26 x 34 local analyses):
+        j = 0 (0: 0: 50.0%)
+        j = 18 (6: 12: 100.0%)
+        j = 42 (14: 20: 100.0%)
+        j = 48 (16: 22: 100.0%)
+        j = 54 (18: 24: 100.0%)
+        j = 3 (1: 2: 50.0%)
+        j = 6 (2: 4: 50.0%)
+        j = 9 (3: 6: 50.0%)
+        j = 12 (4: 8: 50.0%)
+        j = 15 (5: 10: 50.0%)
+        j = 21 (7: 13: 100.0%)
+        j = 24 (8: 14: 100.0%)
+        j = 27 (9: 15: 100.0%)
+        j = 30 (10: 16: 100.0%)
+        j = 33 (11: 17: 100.0%)
+        j = 36 (12: 18: 100.0%)
+        j = 39 (13: 19: 100.0%)
+        j = 45 (15: 21: 100.0%)
+        j = 51 (17: 23: 100.0%)
+        j = 57 (19: 25: 100.0%)
+        j = 63 (1: 3: 100.0%)
+        j = 66 (2: 5: 100.0%)
+        j = 69 (3: 7: 100.0%)
+        j = 72 (4: 9: 100.0%)
+        j = 75 (5: 11: 100.0%)
+        j = 60 (0: 1: 100.0%)
+    finished calculating transforms for rho-grid
+    writing stats to "enkf_diag-0.nc":
+    summary stats on rho-grid:
+      # of local analyses = 884
+      average # of local obs = 802.8
+      # of inversions in obs space = 19
+      # of inversions in ens space = 827
+    calculating transforms for u-grid:
+      distributing 26 iterations:
+        20 processes get 2 or 1 iterations
+      creating empty file "transforms-1.nc":
+        j = 42 (14: 20: 100.0%)
+        j = 45 (15: 21: 100.0%)
+        j = 48 (16: 22: 100.0%)
+        j = 51 (17: 23: 100.0%)
+      main cycle for u-grid (26 x 34 local analyses):
+        j = 0 (0: 0: 50.0%)
+        j = 6 (2: 4: 50.0%)
+        j = 9 (3: 6: 50.0%)
+        j = 15 (5: 10: 50.0%)
+        j = 12 (4: 8: 50.0%)
+        j = 21 (7: 13: 100.0%)
+        j = 24 (8: 14: 100.0%)
+        j = 27 (9: 15: 100.0%)
+        j = 30 (10: 16: 100.0%)
+        j = 33 (11: 17: 100.0%)
+        j = 36 (12: 18: 100.0%)
+        j = 18 (6: 12: 100.0%)
+        j = 39 (13: 19: 100.0%)
+        j = 54 (18: 24: 100.0%)
+        j = 57 (19: 25: 100.0%)
+        j = 3 (1: 2: 50.0%)
+        j = 63 (1: 3: 100.0%)
+        j = 66 (2: 5: 100.0%)
+        j = 72 (4: 9: 100.0%)
+        j = 69 (3: 7: 100.0%)
+        j = 75 (5: 11: 100.0%)
+        j = 60 (0: 1: 100.0%)
+    finished calculating transforms for u-grid
+    writing stats to "enkf_diag-1.nc":
+    summary stats on u-grid:
+      # of local analyses = 884
+      average # of local obs = 804.8
+      # of inversions in obs space = 19
+      # of inversions in ens space = 829
+    calculating transforms for v-grid:
+      distributing 25 iterations:
+        20 processes get 2 or 1 iterations
+      creating empty file "transforms-2.nc":
+        j = 21 (7: 12: 100.0%)
+        j = 24 (8: 13: 100.0%)
+        j = 27 (9: 14: 100.0%)
+        j = 30 (10: 15: 100.0%)
+        j = 33 (11: 16: 100.0%)
+        j = 36 (12: 17: 100.0%)
+        j = 18 (6: 11: 100.0%)
+        j = 51 (17: 22: 100.0%)
+        j = 42 (14: 19: 100.0%)
+        j = 45 (15: 20: 100.0%)
+        j = 48 (16: 21: 100.0%)
+      main cycle for v-grid (25 x 34 local analyses):
+        j = 0 (0: 0: 50.0%)
+        j = 39 (13: 18: 100.0%)
+        j = 54 (18: 23: 100.0%)
+        j = 57 (19: 24: 100.0%)
+        j = 15 (5: 10: 100.0%)
+        j = 3 (1: 2: 50.0%)
+        j = 12 (4: 8: 50.0%)
+        j = 9 (3: 6: 50.0%)
+        j = 6 (2: 4: 50.0%)
+        j = 66 (2: 5: 100.0%)
+        j = 63 (1: 3: 100.0%)
+        j = 69 (3: 7: 100.0%)
+        j = 72 (4: 9: 100.0%)
+        j = 60 (0: 1: 100.0%)
+    finished calculating transforms for v-grid
+    writing stats to "enkf_diag-2.nc":
+    summary stats on v-grid:
+      # of local analyses = 850
+      average # of local obs = 828.3
+      # of inversions in obs space = 15
+      # of inversions in ens space = 807
+  writing point logs:
+    calculating transforms for log point (-40.000,-26.000): 1054 obs
+    writing log for point (-40.000,-26.000) on grid "rho-grid":
+    writing log for point (-40.000,-26.000) on grid "u-grid":
+    writing log for point (-40.000,-26.000) on grid "v-grid":
+  calculating analysed observations:
+  2021-09-29 12:06:30
+    sorting obs by ij:
+    2021-09-29 12:06:30
+    updating Hx:
+    distributing 6498 iterations:
+      20 processes get 325 or 324 iterations
+    2021-09-29 12:06:30
+  adding analysis innovations and spread to "observations.nc":
+  printing observation statistics:
+    region obs.type   # obs.  |for.inn.| |an.inn.|   for.inn.   an.inn.  for.spread  an.spread
+    ------------------------------------------------------------------------------------------
+    BSANTOS
+           SLA           561    0.356      0.168      0.356   -0.00636     0.0519     0.0519  
+             Altika Drifting Phase      64    0.358      0.196      0.358    -0.0918     0.0633     0.0633  
+             Haiyang-2B     200    0.347      0.174      0.347    -0.0603     0.0485     0.0485  
+             Jason-3     152    0.352      0.151      0.352     0.0935     0.0492     0.0492  
+             Sentinel-3A     145    0.371      0.167      0.371    0.00102     0.0541     0.0541  
+           SST          5937     22.8      0.848       22.7    -0.0397      0.434      0.434  
+             NOAA-19     230     23.3      0.915       23.3      0.384      0.414      0.414  
+             GCOM-W1    5707     22.8      0.845       22.7    -0.0568      0.435      0.435  
+  2021-09-29 12:06:30
+  finished

@@ -1,0 +1,410 @@
+  running PREP for EnKF-C version 2.9.13:
+    command = "./enkf_prep enoi.prm"
+    dir = "/home/ivans/Dropbox/numex/roms/cases/sse/bsa0.10/enkf-c"
+  2021-11-02 10:52:59
+  reading prep specs from "enoi.prm":
+    MODE = EnOI
+    MODEL PRM = "model.prm"
+    GRID PRM = "grid.prm"
+    OBS TYPES PRM = "obstypes.prm"
+    OBS PRM = "obs.prm"
+    DATE = "11323.5 days since 1990-01-01"
+    BGDIR = "d-background/20210101"
+    ENSEMBLE DIR = "d-ensemble/static"
+    ENSEMBLE SIZE = 26
+    RFACTOR BASE = 1.0
+    INFLATION BASE = 1.0000
+    INFLATION MODE = CAPPED, MAX RATIO = 1.00
+    KFACTOR = 999.0
+      LOCRAD  = 100
+      LOCWEIGHT =  1
+    STRIDE = 3
+    FIELDBUFFERSIZE = 4
+    REGION BSANTOS: x = [-50.0, -38.0], y = [-30.0, -21.0]
+    NCFORMAT = NETCDF4
+    NCCOMPRESSION = 0
+    EnKF flags:
+      enkf_exitaction  = [BACKTRACE]
+      enkf_obstype     = [VALUE]
+    enkf_prep compile flags:
+      INTERNAL_QSORT_R = [-]
+  reading observation specs from "obs.prm":
+    PRODUCT = RADS
+      READER = scattered
+      TYPE = SLA
+        File: d-obs/cmems_sla/sla_l3_cmems/nrt_global_*_phy_l3_202101{01,02}_*.nc
+      ERROR_STD = 0.07, operation = EQUAL
+      PARAMETER VARNAME = sla_filtered
+      PARAMETER BATCHNAME = cycle
+      PARAMETER ZVALUE = 0
+      PARAMETER MINDEPTH = 100
+    PRODUCT = GHRSST
+      READER = gridded_xy
+      TYPE = SST
+        File: d-obs/podaac/2021-01/subsetted-20210101*-NAVO*
+      ERROR_STD = 0.1, operation = EQUAL
+      PARAMETER ZVALUE = 0
+      PARAMETER VARNAME = sea_surface_temperature
+      PARAMETER VARSHIFT = -273.15
+    PRODUCT = GHRSST
+      READER = gridded_xy
+      TYPE = SST
+        File: d-obs/podaac/2021-01/subsetted-20210101*-REMSS*
+      ERROR_STD = 0.1, operation = EQUAL
+      PARAMETER ZVALUE = 0
+      PARAMETER VARNAME = sea_surface_temperature
+      PARAMETER VARSHIFT = -273.15
+  creating model and observations:
+    grid prm info:
+      NAME = "rho-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      DEPTHVARNAME = "h"
+      MASKVARNAME = "mask_rho"
+      VDIR = "tosurf"
+      XVARNAME = "lon_rho"
+      YVARNAME = "lat_rho"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 101 x 76 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "rho-grid_XY":
+        7676 nodes
+        491312 bytes
+    grid prm info:
+      NAME = "u-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_u"
+      VDIR = "tosurf"
+      XVARNAME = "lon_u"
+      YVARNAME = "lat_u"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 100 x 76 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "u-grid_XY":
+        7600 nodes
+        486448 bytes
+    grid prm info:
+      NAME = "v-grid"
+      DOMAIN = Default
+      DATA = "d-grids/grid_spec_bsa0.10.nc"
+      VTYPE = "sigma"
+      VDIR = tosurf
+      GEOGRAPHIC = yes
+      CVARNAME = "Cs_r"
+      CCVARNAME = "Cs_w"
+      SVARNAME = "s_rho"
+      SCVARNAME = "s_w"
+      HCVARNAME = "hc"
+      MASKVARNAME = "mask_v"
+      VDIR = "tosurf"
+      XVARNAME = "lon_v"
+      YVARNAME = "lat_v"
+      ZSTATINTS = [0 50] [50 500] [500 9999] 
+    grid info:
+      hor type = CURVILINEAR
+      geographic = yes
+      dims = 101 x 75 x 30
+      longitude range = [-180.000, 180.000]
+      v type = SIGMA
+      hc = 100.000000
+      v dir = TOSURF
+      STRIDE = 0
+      kdtree "v-grid_XY":
+        7575 nodes
+        484848 bytes
+  model info:
+    name = B.Santos
+    7 variables:
+      zeta:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      temp:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      salt:
+        grid = "rho-grid"
+        inflation = 1.000 1.00
+      u:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      v:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+      ubar:
+        grid = "u-grid"
+        inflation = 1.000 1.00
+      vbar:
+        grid = "v-grid"
+        inflation = 1.000 1.00
+  reading observation type specs from "obstypes.prm":
+    NAME = SLA
+    ISSURFACE = 1
+      VAR = zeta
+      ID = 0
+      OFFSET = d-grids/roms_mean_bsa_2020.nc zeta
+      HFUNCTION = standard
+      ALLOWED MIN = -1
+      ALLOWED MAX = 1
+      ASYNCHRONOUS = no
+      LOCRAD  = 100
+      LOCWEIGHT =  1
+      RFACTOR = 1
+      PERMIT_LOCATION_BASED_THINNING = YES
+    NAME = SST
+    ISSURFACE = 1
+      VAR = temp
+      ID = 1
+      HFUNCTION = standard
+      ALLOWED MIN = -5e+03
+      ALLOWED MAX = 5e+03
+      ASYNCHRONOUS = no
+      LOCRAD  = 100
+      LOCWEIGHT =  1
+      RFACTOR = 16
+      WINDOWMIN = -0.250
+      WINDOWMAX = 0.250
+      PERMIT_LOCATION_BASED_THINNING = NO
+  reading observations:
+    PRODUCT = RADS, TYPE = SLA, reader = scattered
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_al_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 43476
+        # obs added = 113
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_c2n_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 46600
+        # obs added = 0
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_h2b_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 45588
+        # obs added = 127
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_j3_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 52264
+        # obs added = 131
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_s3a_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 45424
+        # obs added = 225
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_s3b_phy_l3_20210101_20210122.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 46352
+        # obs added = 0
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_al_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 23650
+        # obs added = 0
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_c2n_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 46040
+        # obs added = 0
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_h2b_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 45664
+        # obs added = 208
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_j3_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 51989
+        # obs added = 122
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_s3a_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 45179
+        # obs added = 0
+      reading d-obs/cmems_sla/sla_l3_cmems/nrt_global_s3b_phy_l3_20210102_20210123.nc:
+        VARNAME = sla_filtered
+        LONNAME = longitude
+        LATNAME = latitude
+        nobs = 47613
+        # obs added = 0
+      id = 0 - 925
+        101 observations in shallow areas
+      total 926 observations
+      825 valid observations
+      setting error_std to 0.07
+      min day = -0.451
+      max day = 1.393
+    PRODUCT = GHRSST, TYPE = SST, reader = gridded_xy
+      reading d-obs/podaac/2021-01/subsetted-20210101054128-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 1)
+        nobs = 409
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101073037-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 788)
+        nobs = 5127
+        # obs added = 88
+      reading d-obs/podaac/2021-01/subsetted-20210101091214-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 705)
+        nobs = 69
+        # obs added = 5
+      reading d-obs/podaac/2021-01/subsetted-20210101174704-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 1)
+        nobs = 409
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101192744-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 731)
+        nobs = 4732
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101205514-NAVO-L2P_GHRSST-SST1m-AVHRR19_G-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (409, 789)
+        nobs = 3244
+        # obs added = 502
+      id = 926 - 1520
+        502 observations outside obs. window
+      total 595 observations
+      93 valid observations
+      setting error_std to 0.1
+      min day = -0.188
+      max day = -0.117
+    PRODUCT = GHRSST, TYPE = SST, reader = gridded_xy
+      reading d-obs/podaac/2021-01/subsetted-20210101014951-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_rt_r45879-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 278)
+        nobs = 21246
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101014951-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_v08_r45879-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 278)
+        nobs = 21246
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101032843-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_rt_r45880-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 274)
+        nobs = 10763
+        # obs added = 4029
+      reading d-obs/podaac/2021-01/subsetted-20210101032843-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_v08_r45880-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 274)
+        nobs = 10763
+        # obs added = 4029
+      reading d-obs/podaac/2021-01/subsetted-20210101150054-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_rt_r45887-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 59)
+        nobs = 822
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101150054-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_v08_r45887-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 59)
+        nobs = 822
+        # obs added = 0
+      reading d-obs/podaac/2021-01/subsetted-20210101163947-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_rt_r45888-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 273)
+        nobs = 27386
+        # obs added = 8746
+      reading d-obs/podaac/2021-01/subsetted-20210101163947-REMSS-L2P_GHRSST-SSTsubskin-AMSR2-L2B_v08_r45888-v02.0-fv01.0.nc:
+        VARNAME = sea_surface_temperature
+        LONNAME = lon
+        LATNAME = lat
+        (ni, nj) = (243, 273)
+        nobs = 27386
+        # obs added = 8746
+      id = 1521 - 27070
+        8058 observations outside obs. window
+      total 25550 observations
+      17492 valid observations
+      setting error_std to 0.1
+      min day = 0.193
+      max day = 0.193
+  2021-11-02 10:52:59
+  compacting obs:
+  2021-11-02 10:52:59
+  superobing:
+    6268 superobservations
+  2021-11-02 10:52:59
+  checking for superobs on land:
+    all good
+  2021-11-02 10:52:59
+  writing superobservations to "observations.nc":
+  printing observation summary:
+    type    #used    #dropped #out_grd #out_obs #out_wnd #land    #shallow #badbatch#badvalue#thinned #excluded#superobs
+    -----------------------------------------------------------------------------------------------------------
+    SLA     825      101      0        0        0        0        101      0        0        0        0        561     
+    SST     17585    8560     0        0        8560     0        0        0        0        0        0        5707    
+    total   18410    8661     0        0        8560     0        101      0        0        0        0        6268    
+  2021-11-02 10:52:59
+  finished

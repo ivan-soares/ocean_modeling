@@ -1,0 +1,17 @@
+NAME = B.Santos
+
+VAR = zeta
+GRID = rho-grid
+VAR = temp
+GRID = rho-grid
+VAR = salt  
+GRID = rho-grid
+VAR = u  
+GRID = u-grid
+VAR = v
+GRID = v-grid
+VAR = ubar
+GRID = u-grid
+VAR = vbar
+GRID = v-grid
+

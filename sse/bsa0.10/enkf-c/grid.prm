@@ -1,0 +1,41 @@
+NAME = rho-grid                                                                                             
+DATA = d-grids/grid_spec_bsa0.10.nc                                                                                             
+VTYPE = sigma                                                                                               
+VDIR = tosurf                                                                                               
+XVARNAME = lon_rho                                                                                          
+YVARNAME = lat_rho                                                                                          
+CVARNAME = Cs_r                                                                                             
+CCVARNAME = Cs_w                                                                                            
+SVARNAME = s_rho                                                                                            
+SCVARNAME = s_w                                                                                              
+HCVARNAME = hc                                                                                                
+MASKVARNAME = mask_rho                                                                                      
+DEPTHVARNAME = h                                                                                            
+                                                                                                           
+NAME = u-grid                                                                                               
+DATA = d-grids/grid_spec_bsa0.10.nc                                                                  
+VTYPE = sigma                                                                                               
+VDIR = tosurf                                                                                               
+XVARNAME = lon_u                                                                                            
+YVARNAME = lat_u                                                                                            
+CVARNAME = Cs_r                                                                                             
+CCVARNAME = Cs_w                                                                                            
+SVARNAME = s_rho                                                                                            
+SCVARNAME = s_w                                                                                              
+HCVARNAME = hc                                                                                                
+MASKVARNAME = mask_u                                                                                        
+                                                                                                           
+NAME = v-grid                                                                                               
+DATA = d-grids/grid_spec_bsa0.10.nc                                                                  
+VTYPE = sigma                                                                                               
+VDIR = tosurf                                                                                               
+XVARNAME = lon_v                                                                                            
+YVARNAME = lat_v                                                                                            
+CVARNAME = Cs_r                                                                                             
+CCVARNAME = Cs_w                                                                                            
+SVARNAME = s_rho                                                                                            
+SCVARNAME= s_w                                                                                              
+HCVARNAME = hc                                                                                                
+MASKVARNAME = mask_v                                                                                       
+
+

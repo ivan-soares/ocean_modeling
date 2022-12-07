@@ -1,0 +1,13 @@
+Citations
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 27, 2021. Subset obtained for PODAAC-GHAMB-2PO02 product for region: -50, -38, -31, -18 time period: 2021/01/01 to 2021/02/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 27, 2021. Subset obtained for PODAAC-GHAM2-2PR8A product for region: -50, -38, -31, -18 time period: 2021/01/01 to 2021/02/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 27, 2021. Subset obtained for PODAAC-GH19G-2PN02 product for region: -50, -38, -31, -18 time period: 2021/01/01 to 2021/02/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 27, 2021. Subset obtained for PODAAC-GHAMB-2PO02 product for region: -50, -38, -31, -18 time period: 2021/01/01 to 2021/02/01.
+
+
+
+Citations
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 28, 2021. Subset obtained for PODAAC-GHAMB-2PO02 product for region: -50, -38, -31, -21 time period: 2021/02/01 to 2021/03/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 28, 2021. Subset obtained for PODAAC-GHAM2-2PR8A product for region: -50, -38, -31, -21 time period: 2021/02/01 to 2021/03/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 28, 2021. Subset obtained for PODAAC-GHAM2-2PR8A product for region: -50, -38, -31, -21 time period: 2021/02/01 to 2021/03/01.
+PO.DAAC 2019. High-Level Tool for Interactive Data Extraction (HiTIDE V 4.8.0). PO.DAAC, Jet Propulsion Laboratory, Pasadena, California, USA. https://podaac-tools.jpl.nasa.gov/hitide. Accessed September 28, 2021. Subset obtained for PODAAC-GHAMB-2PO02 product for region: -50, -38, -31, -21 time period: 2021/02/01 to 2021/03/01.

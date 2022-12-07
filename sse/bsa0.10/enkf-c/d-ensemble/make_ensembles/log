@@ -1,0 +1,2268 @@
+
+ ... Starting script to make static ensemble members for the year of 2020 ...
+
+
+ ... day 7, ensemble member 001 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 0 to day 14
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 21, ensemble member 002 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 14 to day 28
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 35, ensemble member 003 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 28 to day 42
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 49, ensemble member 004 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 42 to day 56
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 63, ensemble member 005 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 56 to day 70
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 77, ensemble member 006 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 70 to day 84
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 91, ensemble member 007 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 84 to day 98
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 105, ensemble member 008 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 98 to day 112
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 119, ensemble member 009 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 112 to day 126
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 133, ensemble member 010 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 126 to day 140
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 147, ensemble member 011 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 140 to day 154
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 161, ensemble member 012 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 154 to day 168
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 175, ensemble member 013 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 168 to day 182
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 189, ensemble member 014 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 182 to day 196
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 203, ensemble member 015 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 196 to day 210
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 217, ensemble member 016 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 210 to day 224
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 231, ensemble member 017 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 224 to day 238
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 245, ensemble member 018 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 238 to day 252
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 259, ensemble member 019 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 252 to day 266
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 273, ensemble member 020 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 266 to day 280
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 287, ensemble member 021 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 280 to day 294
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 301, ensemble member 022 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 294 to day 308
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 315, ensemble member 023 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 308 to day 322
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 329, ensemble member 024 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 322 to day 336
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 343, ensemble member 025 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 336 to day 350
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... day 357, ensemble member 026 
+
+ ... VAR zeta
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR temp
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR salt
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR u
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR ubar
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR v
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+ ... VAR vbar
+
+ ... ... extract time range from day 350 to day 364
+
+ ... ... compute two-week average
+
+ ... ... extract one-day average
+
+ ... ... compute diff one-day avg - two-week avg
+
+ ... ... delete time dimension 
+
+
+ ... End of script ...
+

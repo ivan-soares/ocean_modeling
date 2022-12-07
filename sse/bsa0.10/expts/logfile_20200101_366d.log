@@ -1,0 +1,128 @@
+nohup: ignoring input
+
+ ==> STARTING ROMS EXPT @ 2022/03/08 10:16:11 <== 
+
+
+ ==> Sourcing expt_setup.sh for general forecast settings <==
+
+ ... roms grid file is /home/ivans/roms/cases/sse/bsa0.10/grid/grid_bsa0.10_01a.nc
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+ ... grid box is -49.00 -39.00 -29.50 -22.00
+
+ ... grid size is 101 lons,  76 lats, 40 layers
+
+
+ ==> 2022/03/08 10:16:22 HERE I am @ /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-temporary for step 05: run ROMS <==
+
+
+ ... today is 2020-01-01
+
+ ... roms grid size is 101 x 76 x 30
+ ... roms grid limits are: x1,x2 = -49.00,-39.00, y1,y2 = -29.50,-22.00
+ ... roms grid resolution is regular: 0.10 x 0.10
+
+ ... will store outputs in folder /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-storage
+
+ ... start day is 20200101
+ ... the expt is gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst
+ ... will run for 366 day(s)
+
+ ... the donor file is /home/ivans/roms/cases/sse/bsa0.10/clim/d-inputs/hncoda_bsa0.08_06h/glby_20210101.nc
+ ... will read donor 1465 time steps every 6 hours
+
+ ... the grid file is /home/ivans/roms/cases/sse/bsa0.10/grid/grid_bsa0.10_01a.nc
+ ... the nudg file is /home/ivans/roms/cases/sse/bsa0.10/nudge/nudge_bsa0.10_01a_exp_strong.nc
+ ... the tide file is /home/ivans/roms/cases/sse/bsa0.10/tide/tide_bsa0.10_01a_2020_ref2000.nc
+
+
+ ... will copy roms input files to /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-temporary/roms_in
+ ... will output roms results to /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-temporary/roms_out
+
+ ... /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-temporary/roms_in exists, will use it
+ ... /home/ivans/roms/cases/sse/bsa0.10/expts/gfs+glby_no_tide_20200101_366d_radnud_no_dqdsst/d-temporary/roms_out exists, will use it
+
+ +++ Starting step05 s.r. 01: make links to ROMS input files +++
+
+
+ ... accessing ROMS grid file /home/ivans/roms/cases/sse/bsa0.10/grid/grid_bsa0.10_01a.nc
+
+
+ ... this implementation uses no tides
+
+
+ ... this implementation uses no rivers
+
+
+ ... accessing ROMS nudg file /home/ivans/roms/cases/sse/bsa0.10/nudge/nudge_bsa0.10_01a_exp_strong.nc
+
+
+ ... didnt find ROMS init file /home/ivans/roms/cases/sse/bsa0.10/d-storage/yesterday/roms_rst_bsa0.10_01a_20200101_glby.nc
+
+ ... will use file /home/ivans/roms/cases/sse/bsa0.10/clim/d-storage/input_clm_bsa0.10_01a_20200101_366d_glby.nc
+
+
+ ... accessing ROMS clim file /home/ivans/roms/cases/sse/bsa0.10/clim/d-storage/input_clm_bsa0.10_01a_20200101_366d_glby.nc
+
+
+ ... accessing ROMS bdry file /home/ivans/roms/cases/sse/bsa0.10/clim/d-storage/input_bry_bsa0.10_01a_20200101_366d_glby.nc
+
+
+ ... this implementation uses no SST
+
+
+ ... accessing ROMS force file /home/ivans/roms/cases/sse/bsa0.10/force/d-storage/force_gfs_bsa0.50_20200101_366d.nc
+
+ ... will use floats
+
+ ... accessing ROMS floats file /home/ivans/roms/cases/sse/bsa0.10/grid/roms_floats_bsa0.10_01a.in
+
+ ... will use stations
+
+ ... accessing ROMS stations file /home/ivans/roms/cases/sse/bsa0.10/grid/roms_stations_bsa0.10_01a.in
+
+
+ +++ End of step 05 s.r. 01 +++
+
+ 
+ ... Python program to find n. of days between 2020/1/1 and 2000/1/1
+ 
+ 
+ ... dstart = 7305
+ 
+
+ ... prepare ocean.in file for Bacia de Santos 1/10 degreee 49W-39W - 29.5N-22N (101x76x30) 
+ ... will use the time ref 20000101.0d0 
+
+ ... will NOT use tide
+ ... will use nudge built by user
+ ... will compute daily averages
+
+ ... roms executable code is romsM_bsantos_no_tide_nudge_by_user_avg_no_dqdsst
+
+
+ ... starting the model
+
+
+ ... end of simulation
+
+
+ ... now we check that history file exists and has 2929 time steps
+
+ ... found file roms_his.nc
+ ... the # of time steps in the file is 2929
+ ... the # of expected time steps is 2929
+
+ ... all is fine, roms history file roms_his.nc has 2929 steps
+ ... move output files to storage
+
+
+ ==> 2022/03/09 06:43:28 FINISHED running ROMS <==
+
+
+ ==> FINISHED ROMS/WW3 7-DAY FORECAST @ 2022/03/09 06:43:28 <== 
+

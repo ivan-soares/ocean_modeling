@@ -1,0 +1,11 @@
+MODE = EnOI
+BGDIR = background_20210101
+
+MODEL = model.prm
+GRID = grid.prm
+OBSTYPES = obstypes.prm
+
+OBS = obs.prm
+DATE = 25933 days since 1950-01-01
+
+REGION Global   0   360   -90     90
