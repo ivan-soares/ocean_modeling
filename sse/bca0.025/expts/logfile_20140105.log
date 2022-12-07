@@ -1,0 +1,119 @@
+
+ ==> STARTING ROMS/WW3 7-DAY FORECAST @ qua 20 abr 2022 14:17:49 -03 <== 
+
+
+ ==> Sourcing expt_setup.sh for general forecast settings <==
+
+ ... roms grid file is /home/ivans/roms/cases/sse/bca0.025/grid/grid_bca0.025_01b.nc
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+Warning (find_time_vars): Time variable >bath< not found!
+ ... grid box is -45.15 -35.15 -26.50 -19.25
+
+ ... grid size is 401 lons,  291 lats, 30 layers
+
+
+ ==> 2022/04/20 14:17:50 HERE I am @ /home/ivans/roms/cases/sse/bca0.025/expts/d-temporary for step 05: run ROMS <==
+
+
+ ... today is 2014-01-05
+
+ ... roms grid size is 401 x 291 x 30
+ ... roms grid limits are: x1,x2 = -45.15,-35.15, y1,y2 = -26.50,-19.25
+ ... roms grid resolution is regular: 0.025 x 0.025
+
+ ... will store outputs in folder /home/ivans/roms/cases/sse/bca0.025/expts/d-storage
+
+ ... start day is 20140105
+ ... the expt is bca0.025_01b_20140105
+ ... will run for 10 day(s)
+
+ ... the grid  file is /home/ivans/roms/cases/sse/bca0.025/grid/grid_bca0.025_01b.nc
+ ... the force file is /home/ivans/roms/cases/sse/bca0.025/force/d-storage/force_bca0.25_2014_cfsr_03h.nc
+ ... the nudg  file is /home/ivans/roms/cases/sse/bca0.025/nudge/nudge_bca0.025_01b_exp_medium.nc
+ ... will not use tide
+
+
+ ... will read roms input files from /home/ivans/roms/cases/sse/bca0.025/expts/d-temporary/roms_in
+ ... will output roms results to /home/ivans/roms/cases/sse/bca0.025/expts/d-temporary/roms_out
+
+ ... /home/ivans/roms/cases/sse/bca0.025/expts/d-temporary/roms_in exists, will use it
+ ... /home/ivans/roms/cases/sse/bca0.025/expts/d-temporary/roms_out exists, will use it
+rm: cannot remove '/home/ivans/roms/cases/sse/bca0.025/expts/d-temporary/roms_out/*': No such file or directory
+
+ +++ Starting step05 s.r. 01: make links to ROMS input files +++
+
+
+ ... accessing ROMS grid file /home/ivans/roms/cases/sse/bca0.025/grid/grid_bca0.025_01b.nc
+
+
+ ... this implementation uses no tides
+
+
+ ... this implementation uses no rivers
+
+
+ ... accessing ROMS nudg file /home/ivans/roms/cases/sse/bca0.025/nudge/nudge_bca0.025_01b_exp_medium.nc
+
+
+ ... accessing ROMS init file /home/ivans/roms/cases/sse/bca0.025/expts/d-storage/20140101/roms_rst_bca0.025_01b_20140105.nc 
+
+
+ ... accessing ROMS clim file /home/ivans/roms/cases/sse/bca0.025/clim/d-storage/input_clm_bca0.025_01b_20140101_glorys_365d.nc
+
+
+ ... accessing ROMS bdry file /home/ivans/roms/cases/sse/bca0.025/clim/d-storage/input_bry_bca0.025_01b_20140101_glorys_365d.nc
+
+
+ ... this implementation uses no SST
+
+
+ ... accessing ROMS force file /home/ivans/roms/cases/sse/bca0.025/force/d-storage/force_bca0.25_2014_cfsr_03h.nc
+
+
+ +++ End of step 05 s.r. 01 +++
+
+ 
+ ... Python program to find n. of days between 2014/1/5 and 2000/1/1
+ 
+ 
+ ... dstart = 5118
+ 
+
+ +++ Starting step05 s.r. 02: prepare ocean.in file for Campos Basin 2014, 1/40 deg, 45.15W-35.15W - 26.50S-19.25S (401x291x30) +++
+
+
+ +++ End of step05 s.r. 02 +++
+
+ ... will NOT use the tides at all !!!
+ ... will use nudge built by user
+ ... will compute daily averages
+
+ ... roms executable code is /home/ivans/operational/roms/code/romsMY25_bca_no_tide_nudge_by_user_avg_no_dqdsst
+
+
+ ... starting the model at 2022/04/20 14:17:51
+
+
+ ... end of simulation at 2022/04/20 20:01:45
+
+
+ ... now we check that history file exists and has 41 time steps
+
+ ... found file roms_his.nc
+ ... the # of time steps in the file is 41
+ ... the # of expected time steps is 41
+
+ ... all is fine, roms history file roms_his.nc has 41 steps
+ ... move output files to storage
+
+
+ ==> 2022/04/20 20:01:45 FINISHED running ROMS <==
+
+
+ ==> FINISHED ROMS/WW3 7-DAY FORECAST @ qua 20 abr 2022 20:01:45 -03 <== 
+
+mv: cannot move '/home/ivans/roms/cases/sse/bca0.025/expts/timelog_glorys.20140105' to '/home/ivans/roms/cases/sse/bca0.025/expts/d-logfiles/20140105/.': No such file or directory
