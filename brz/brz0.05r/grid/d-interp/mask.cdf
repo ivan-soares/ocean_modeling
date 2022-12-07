@@ -1,0 +1,73 @@
+netcdf grid_brz0.05_01c {
+dimensions:
+	xi_rho = NXR ;
+	xi_u = NXU ;
+	xi_v = NXV ;
+	xi_psi = NXP ;
+	eta_rho = NYR ;
+	eta_u = NYU ;
+	eta_v = NYV ;
+	eta_psi = NYP ;
+variables:
+	int spherical ;
+		spherical:long_name = "grid type logical switch" ;
+		spherical:flag_values = 0, 1 ;
+		spherical:flag_meanings = "Cartesian spherical" ;
+	double h(eta_rho, xi_rho) ;
+		h:long_name = "model bathymetry at RHO-points" ;
+		h:units = "meter" ;
+		h:_FillValue = -32768. ;
+		h:missing_value = -32768s ;
+	double lon_rho(eta_rho, xi_rho) ;
+		lon_rho:long_name = "longitude of RHO-points" ;
+		lon_rho:units = "degree_east" ;
+		lon_rho:standard_name = "longitude" ;
+	double lat_rho(eta_rho, xi_rho) ;
+		lat_rho:long_name = "latitute of RHO-points" ;
+		lat_rho:units = "degree_north" ;
+		lat_rho:standard_name = "latitude" ;
+	double lon_psi(eta_psi, xi_psi) ;
+		lon_psi:long_name = "longitude of PSI-points" ;
+		lon_psi:units = "degree_east" ;
+		lon_psi:standard_name = "longitude" ;
+	double lat_psi(eta_psi, xi_psi) ;
+		lat_psi:long_name = "latitute of PSI-points" ;
+		lat_psi:units = "degree_north" ;
+		lat_psi:standard_name = "latitude" ;
+	double lon_u(eta_u, xi_u) ;
+		lon_u:long_name = "longitude of U-points" ;
+		lon_u:units = "degree_east" ;
+		lon_u:standard_name = "longitude" ;
+	double lat_u(eta_u, xi_u) ;
+		lat_u:long_name = "latitute of U-points" ;
+		lat_u:units = "degree_north" ;
+		lat_u:standard_name = "latitude" ;
+	double lon_v(eta_v, xi_v) ;
+		lon_v:long_name = "longitude of V-points" ;
+		lon_v:units = "degree_east" ;
+		lon_v:standard_name = "longitude" ;
+	double lat_v(eta_v, xi_v) ;
+		lat_v:long_name = "latitute of V-points" ;
+		lat_v:units = "degree_north" ;
+		lat_v:standard_name = "latitude" ;
+	double mask_rho(eta_rho, xi_rho) ;
+		mask_rho:long_name = "mask on RHO-points" ;
+		mask_rho:flag_values = 0., 1. ;
+		mask_rho:flag_meanings = "land water" ;
+	double mask_psi(eta_psi, xi_psi) ;
+		mask_psi:long_name = "mask on PSI-points" ;
+		mask_psi:flag_values = 0., 1. ;
+		mask_psi:flag_meanings = "land water" ;
+	double mask_u(eta_u, xi_u) ;
+		mask_u:long_name = "mask on U-points" ;
+		mask_u:flag_values = 0., 1. ;
+		mask_u:flag_meanings = "land water" ;
+	double mask_v(eta_v, xi_v) ;
+		mask_v:long_name = "mask on V-points" ;
+		mask_v:flag_values = 0., 1. ;
+		mask_v:flag_meanings = "land water" ;
+
+// global attributes:
+		:type = "GRID file" ;
+		:history = "GRID file using Matlab script: c_grid, 20-Nov-2017" ;
+}

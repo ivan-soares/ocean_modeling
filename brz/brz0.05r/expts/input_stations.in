@@ -1,0 +1,116 @@
+!==============================================================================
+!
+! Switch to control the writing of stations data within nested and/or multiple
+! connected grids, [1:Ngrids].
+
+   Lstations == T
+
+! Number of stations to process in each nested grid.  These values are
+! essential because the station arrays are dynamically allocated using
+! these values, [1:Ngrids].
+
+    NSTATION ==  7
+
+! Station locations for all grids in any desired order.  The horizontal
+! location for a particular station may be specified in terms of fractional
+! (I,J) grid pairs (FLAG=0) or (longitude,latitude) grid pairs (FLAG=1).
+! Here, FLAG is a special switch and may be used for multiple purposes.
+! The GRID column indicates nested grid number to process. This value must
+! be one in non-nested applications.  The COMMENT section is ignored during
+! reading and may be used to help documentation.
+
+
+POS =  GRID  FLAG      X-POS        Y-POS     COMMENT
+
+         1    1     -52.0250d0   -32.2842d0   SIMCOSTA RG
+         1    1     -43.1503d0   -22.9717d0   SIMCOSTA RJ
+         1    1     -38.5417d0   -12.9894d0   SIMCOSTA SALVADOR 1
+         1    1     -37.9750d0   -12.6033d0   SIMCOSTA SALVADOR 2
+         1    1     -50.0456d0   -30.0050d0   SIMCOSTA TRAMANDAI
+         1    1     -45.3547d0   -23.7736d0   SIMCOSTA I. BELA
+         1    1     -44.9262d0   -25.2803d0   FUNDEIO BR
+
+! Logical switches (TRUE/FALSE) to activate writing of fields in STATION
+! output file, [Sout(:,ng), ng=1, Ngrids].
+
+Sout(idUvel) == F       ! u                  3D U-velocity
+Sout(idVvel) == F       ! v                  3D V-velocity
+Sout(idu3dE) == T       ! u_eastward         3D U-eastward at RHO-points
+Sout(idv3dN) == T       ! v_northward        3D V-nortward at RHO-points
+Sout(idWvel) == F       ! w                  3D W-velocity
+Sout(idOvel) == F       ! omega              3D omega vertical velocity
+Sout(idUbar) == F       ! ubar               2D U-velocity
+Sout(idVbar) == F       ! vbar               2D V-velocity
+Sout(idu2dE) == T       ! ubar_eastward      2D U-eastward  at RHO-points
+Sout(idv2dN) == T       ! vbar_northward     2D V-northward at RHO-points
+Sout(idFsur) == T       ! zeta               free-surface
+Sout(idBath) == F       ! bath               time-dependent bathymetry
+
+Sout(idTvar) == T T     ! temp, salt, ...    all (NT) tracers
+
+Sout(idUsms) == F       ! sustr              surface U-stress
+Sout(idVsms) == F       ! svstr              surface V-stress
+Sout(idUbms) == F       ! bustr              bottom U-stress
+Sout(idVbms) == F       ! bvstr              bottom V-stress
+
+Sout(idUbrs) == F       ! bustrc             bottom U-current stress
+Sout(idVbrs) == F       ! bvstrc             bottom V-current stress
+Sout(idUbws) == F       ! bustrw             bottom U-wave stress
+Sout(idVbws) == F       ! bvstrw             bottom V-wave stress
+Sout(idUbcs) == F       ! bustrcwmax         bottom max wave-current U-stress
+Sout(idVbcs) == F       ! bvstrcwmax         bottom max wave-current V-stress
+
+Sout(idUbot) == F       ! Ubot               bed wave orbital U-velocity
+Sout(idVbot) == F       ! Vbot               bed wave orbital V-velocity
+Sout(idUbur) == F       ! Ur                 bottom U-velocity above bed
+Sout(idVbvr) == F       ! Vr                 bottom V-velocity above bed
+
+Sout(idW2xx) == F       ! Sxx_bar            2D radiation stress, Sxx component
+Sout(idW2xy) == F       ! Sxy_bar            2D radiation stress, Sxy component
+Sout(idW2yy) == F       ! Syy_bar            2D radiation stress, Syy component
+Sout(idU2rs) == F       ! Ubar_Rstress       2D radiation U-stress
+Sout(idV2rs) == F       ! Vbar_Rstress       2D radiation V-stress
+Sout(idU2Sd) == F       ! ubar_stokes        2D U-Stokes velocity
+Sout(idV2Sd) == F       ! vbar_stokes        2D V-Stokes velocity
+
+Sout(idW3xx) == F       ! Sxx                3D radiation stress, Sxx component
+Sout(idW3xy) == F       ! Sxy                3D radiation stress, Sxy component
+Sout(idW3yy) == F       ! Syy                3D radiation stress, Syy component
+Sout(idW3zx) == F       ! Szx                3D radiation stress, Szx component
+Sout(idW3zy) == F       ! Szy                3D radiation stress, Szy component
+Sout(idU3rs) == F       ! u_Rstress          3D U-radiation stress
+Sout(idV3rs) == F       ! v_Rstress          3D V-radiation stress
+Sout(idU3Sd) == F       ! u_stokes           3D U-Stokes velocity
+Sout(idV3Sd) == F       ! v_stokes           3D V-Stokes velocity
+
+Sout(idWamp) == F       ! Hwave              wave height
+Sout(idWlen) == F       ! Lwave              wave length
+Sout(idWdir) == F       ! Dwave              wave direction
+Sout(idWptp) == F       ! Pwave_top          wave surface period
+Sout(idWpbt) == F       ! Pwave_bot          wave bottom period
+Sout(idWorb) == F       ! Ub_swan            wave bottom orbital velocity
+Sout(idWdis) == F       ! Wave_dissip        wave dissipation
+
+Sout(idPair) == F       ! Pair               surface air pressure
+Sout(idUair) == T       ! Uair               surface U-wind component
+Sout(idVair) == T       ! Vair               surface V-wind component
+
+Sout(idTsur) == F F     ! shflux, ssflux     surface net heat and salt flux
+Sout(idLhea) == F       ! latent             latent heat flux
+Sout(idShea) == F       ! sensible           sensible heat flux
+Sout(idLrad) == F       ! lwrad              longwave radiation flux
+Sout(idSrad) == F       ! swrad              shortwave radiation flux
+Sout(idEmPf) == F       ! EminusP            E-P flux
+Sout(idevap) == F       ! evaporation        evaporation rate
+
+Sout(idrain) == F       ! rain               precipitation rate
+
+Sout(idDano) == F       ! rho                density anomaly
+Sout(idVvis) == F       ! AKv                vertical viscosity
+Sout(idTdif) == F       ! AKt                vertical T-diffusion
+Sout(idSdif) == F       ! AKs                vertical Salinity diffusion
+Sout(idHsbl) == F       ! Hsbl               depth of surface boundary layer
+Sout(idHbbl) == F       ! Hbbl               depth of bottom boundary layer
+Sout(idMtke) == F       ! tke                turbulent kinetic energy
+Sout(idMtls) == F       ! gls                turbulent length scale
+
